@@ -50,6 +50,7 @@ namespace CustomerShoppingApp
             }
 
             Console.WriteLine("\nTotal Cost: $" + total);
+            Console.WriteLine("Thank you for shopping with us!");
         }
     }
 
@@ -61,12 +62,16 @@ namespace CustomerShoppingApp
             Product p1 = new Product("Coffee", 10.99);
             Product p2 = new Product("Milk", 3.49);
             Product p3 = new Product("Bread", 4.25);
+            Product p4 = new Product("Butter", 5.99);
+
 
             // Create customer and add products
             Customer cust1 = new Customer(1, "Alex", "alex@example.com");
             cust1.AddProduct(p1);
             cust1.AddProduct(p2);
             cust1.AddProduct(p3);
+            cust1.AddProduct(p4);
+
 
             // Display customer info and shopping list
             cust1.DisplayCustomerInfo();
